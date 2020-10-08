@@ -92,7 +92,7 @@ public class SolrController {
         list.forEach(l->{
             System.out.println("查询响应："+ JSONObject.toJSONString(l));
             //直接删除对象
-            solrService.delete(l);
+         //   solrService.delete(l);
         });
     }
     /*
