@@ -10,6 +10,6 @@ import java.util.List;
 
 @Service
 public interface SolrService extends SolrCrudRepository<EntityUser,String> {
-    @Query(" name_s:*:* ")
+    @Query(" name_s:*?0* ")
     public List<EntityUser> findByQueryAnnotation(String item_title);
 }
